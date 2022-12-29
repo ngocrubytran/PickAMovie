@@ -1,0 +1,22 @@
+{
+  "name": "pickmeamovie",
+  "version": "1.0.0",
+  "description": "This app helps picking a movie based on selected genre",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-dev-env": "nodemon index.js"
+  },
+  "keywords": [
+    "movies",
+    "randomizer"
+  ],
+  "author": "rosieruby",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7",
+    "nodemon": "^2.0.20"
+  }
+}
