@@ -1,14 +1,17 @@
 const tmdbBaseUrl = 'https://api.themoviedb.org/3';
 
-const fetch = require('node-fetch')
+const fetch = require('node-fetch')//used node-fetch@2
 const response = require('express');
 const express = require('express');
+const app = express();
 
 require('dotenv').config();//load anything in .env file into environment variables
+
 const tmdbKey = process.env.tmdbKey;
 
-const app = express();
-app.listen(3000, ()=> console.log('listening at 3000'))
+const port = process.env.PORT || 3000;
+
+app.listen(port, ()=> console.log(`listening at ${port}`))
 
 app.use(express.static('public'))//render index.html in 'public' at port 3000
 
