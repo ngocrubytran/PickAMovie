@@ -7,7 +7,6 @@ const getGenres = async()=>{
         const response = await fetch('genres/');
         if(response.ok){
             const jsonResponse = await response.json();
-            console.log(jsonResponse)
             return jsonResponse.genres;
         }throw new Error("Getting genres failed!")
     } catch(error){
